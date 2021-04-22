@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 :root {
-	--color-primary: #667eea;
-	--color-secundary: #764ba2;
+	--color-primary: #9DE246;
 	--boton-padding: 20px 40px;
 }
 html {
@@ -14,21 +13,32 @@ body {
 	overflow-x: hidden;
 }
 
-.contact {
-	width: 100%;
-    justify-content: center;
+.nav {
+	width: 97%;
+    justify-content: flex-end;
     align-items: center;
+    padding: 41px 0;
     height: 48px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     z-index: 100;
 }
 
-.contact__items {
+.nav__items {
 	padding: 14px;
     align-items: center;
     text-decoration: none;
     color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+.nav__items:hover {
+	color: #9DE246;
+}
+
+.logo {
+	margin-right: auto;
+    padding: 50px;
 }
 
 .container{
@@ -61,48 +71,47 @@ body {
 	padding: 0;
 }
 
-.nav__items {
+.contact__items {
     display: inline-block;
     background:black;
     opacity: 50%;
     color:white;
     text-decoration: none;
-    padding: 10px 30px;
+	padding: 0 134px;
     display: flex;
     transition: all .5s;
     justify-content: center;
     align-items: center;
 }
 
-.nav__items i {
+.contact__items i {
 	margin-right: 10px;
 }
 
-.nav__items:hover {
+.contact__items:hover {
     padding-top: 1rem;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
 
-.nav {
+.contact {
 	width: 100%;
     justify-content: center;
     align-items: center;
-    height: 65px;
+    height: 42px;
     font-size: 1rem;
     display: flex;
     z-index: 100;
 }
 
-.nav a {
-	font-size: 1.1rem;
+.contact a {
+	font-size: 14px;
 	transition: color .4s ease;
 	height: 100%;
 }
 
-.nav a:hover {
+.contact a:hover {
 	color: white;
     font-weight: 500;
-    border-bottom: 2px solid white;
 }
 
 .hero__container {
@@ -127,24 +136,19 @@ body {
 	margin: 15px 0;
 }
 
-/*.hero__wave {
-	position: absolute;
-	bottom: 0;
-	left: 0px;
-	width: 100%;
-}
-*/
 .hero__cta {
 	display: inline-block;
-	background: #fff;
+	background: var(--color-primary);
 	padding: var(--boton-padding);
-	color: var(--color-primary);
+	color: white;
 	text-decoration: none;
 	border-radius: 40px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 .hero__cta:hover {
-	background: #efefef;
+	background: white;
+	color: var(--color-primary);
 }
 
 .hero__cta:active {
@@ -270,10 +274,12 @@ body {
 	text-decoration: none;
 	padding: var(--boton-padding);
 	border-radius: 40px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 .content__cta:hover {
-	background: #5d75ce;
+	background: white;
+	color: var(--color-primary)
 }
 
 .content__cta:active {

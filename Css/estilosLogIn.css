@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
 body {
 	margin: 40px;
 	padding: 0;
-	font-family: 'icomoon';
-	background-image: url("../Elementos/Images/CatAndDog.jpeg");
+	font-family: 'Raleway', sans-serif;
+	background-image: url("../Elementos/Images/pets2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -25,15 +27,15 @@ header {
 	top: 10%;
 	width: 400px;
 	transform: translate(200%, 20%);
-	/*background: #99D0F2;*/
+	background-color: rgba(255, 255, 255);
 	border-radius: 10px;
-
+	box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2)
 }
 
 .logIn-box h1 {
 	text-align: center;
 	padding: 0 0 20px 0;
-	color: #BABF1B
+	color: #9DE246
 }
 
 .logIn-box form {
@@ -43,7 +45,7 @@ header {
 
 form .text_field {
 	position: relative;
-	border-bottom: 2px solid #BABF1B;
+	border-bottom: 2px solid #9DE246;
 	margin: 30px 0;
 }
 
@@ -91,11 +93,10 @@ form .text_field {
 }
 
 input[type="submit"] {
-	font-family: 'icomoon';
 	width: 25%;
 	height: 25px;
 	border: 1px;
-	background: #BABF1B;
+	background: #9DE246;
 	border-radius: 25px;
 	font-size: 14px;
 	color: #fff;
@@ -112,7 +113,7 @@ input[type="submit"]:hover {
 	margin: 30px 0;
 	text-align: center;
 	font-size: 16px;
-	color: #666666;
+	color: rgb(82, 82, 82);
 }
 
 .forget_password a {
